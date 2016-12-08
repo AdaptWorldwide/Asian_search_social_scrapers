@@ -57,7 +57,7 @@ def PrettyPrint(keyword,titles,results):
     r = len(results)
     i = 0
     while i < r:
-        with open('OtherFormat.txt','a',encoding='utf-8') as pretty:
+        with open('OtherFormat.csv','a',encoding='utf-8') as pretty:
             pretty.write('"{}","{}","{}","{}"\n'.format(keyword,i+1,results[i],titles[i]))
         i += 1
 
